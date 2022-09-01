@@ -12,7 +12,7 @@ def euclideanGCF(a, b):
     """
 
     # checks the numbers if they can be operated on
-    if a < 1 or b < 1: return "Cannot execute algorithm for these numbers."
+    if a < 1 or b < 1: raise ValueError("Cannot execute algorithm for these numbers. Please use non-negaitve & non-zero integers.")
 
     # checks if a is bigger than b, otherwise swaps a & b
     if a < b: a,b = b,a
